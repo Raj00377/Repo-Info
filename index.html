@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--Input Field-->
+    <div class="jumbotron jumbotron-fluid bg-dark text-center" style="color: white;">
+        <h1>Repo-Info</h1>
+        <p>Enter the Github username to display their Repositories.</p>
+        <input type="text" id='input' class="input-field" />
+        <button type="button" class="btn btn-success btn-small" id='button'>Search</button>
+    </div>
+
+
+    <!--Displaying Repos-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="errorText" class="error-text"></div>
+                <div id='displayRepo'></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

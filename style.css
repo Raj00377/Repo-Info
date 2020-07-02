@@ -1,0 +1,13 @@
+.input-field {
+    width: 270px;
+    margin: 10px;
+    padding: 5px
+}
+
+
+.error-text {
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
