@@ -4,10 +4,49 @@
     padding: 5px
 }
 
-
 .error-text {
     width: 100%;
     text-align: center;
     font-size: 38px;
     font-weight: bold;
+}
+
+.display-repo {
+    border: 2px solid gainsboro;
+    padding: 30px;
+    margin: 30px;
+    min-width: 450px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.username-text {
+    text-align: center;
+    margin: 20px;
+    font-size: 38px;
+}
+
+@media(max-width:576px) {
+    .jumbotron {
+        width: 100vh;
+    }
+}
+
+.no-of-branches {
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    font-weight: 500;
+    color: teal;
+}
+
+.branches-list {
+    display: none;
+    padding-left: 40px;
 }
