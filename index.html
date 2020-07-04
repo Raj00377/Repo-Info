@@ -15,8 +15,9 @@
     <!--Input Field-->
     <div class="jumbotron jumbotron-fluid bg-dark text-center" style="color: white;">
         <h1>Repo-Info</h1>
-        <p>Enter the Github username to display their Repositories.</p>
-        <input type="text" id='input' class="input-field" />
+        <p>Enter the Github Organisation name to display their Repositories.</p>
+        <input type="text" id='input' class="input-field" placeholder="Enter organisation name here" />
+        <input type="text" id='token-input' class="input-field" placeholder="Enter access token here" />
         <button type="button" class="btn btn-success btn-small" id='button'>Search</button>
     </div>
 
@@ -26,8 +27,28 @@
         <div class="row">
             <div class="col-12">
                 <div id="error-text" class="error-text"></div>
-                <div id='profile-img-ID' class = 'profile-img'></div>
-                <div id='username-ID' class="username-text"></div>
+                <div id='profile-img-ID' class='profile-img' style="display: none;"></div>
+                <div id='org-ID' class="org-text"></div>
+                <div id= 'repo-dropdown' style="display: none;">
+                <p>Type of Repo: 
+                <select id="repo-dropdown-ID" onchange="getRepoType()" > 
+                    <option selected disabled value="">Select</option>
+                    <option value="public">Public</option> 
+                    <option value="private">Private</option> 
+                </select> 
+                </p>
+
+                </div>
+                <div id= 'lang-dropdown' style="display: none;">
+                <p>Programming Language: 
+                <select id="lang-dropdown-ID" onchange="getLanguage()"> 
+                    <option selected disabled value="">Select</option>
+                    <option value="html">HTML</option> 
+                    <option value="css">CSS</option>
+                    <option value="ruby">Ruby</option>
+                </select> 
+                </p>
+                </div>
                 <div id='display-repo'></div>
             </div>
         </div>

@@ -26,7 +26,7 @@
     margin-left: auto;
 }
 
-.username-text {
+.org-text {
     text-align: center;
     margin: 20px;
     font-size: 38px;
@@ -36,6 +36,11 @@
     .jumbotron {
         width: 100vh;
     }
+}
+
+.btn {
+    display: block !important;
+    margin: auto !important;
 }
 
 .no-of-branches {
