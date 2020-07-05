@@ -96,7 +96,7 @@ toInnerHTML = (element) => {
                 <div class = display-repo>
                     <p>Name: ${element.name}</p>
                     <p>Description: <br/> ${element.description}</p>
-                    <p>Github Repo link: <br/><a href=${element.html_url} target='_blank'>${element.html_url}</a></p>
+                    <p>Github Repo link: <br/><a href=${element.html_url} target='_blank'>/${element.name}</a></p>
                     <p class='no-of-branches' onclick= showBranches(${element.name.split(/[.-]+/).join('')})>No of Branches: ${branches.length}</p> 
                     <span style='font-size:22px'>&#10095;</span>
                     <div id=${element.name.split(/[.-]+/).join('')} class='branches-list'>

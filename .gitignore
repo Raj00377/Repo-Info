@@ -1,1 +1,5 @@
 .vscode/
+.firebaserc
+firebase.json
+firebase-debug.log
+.firebase
